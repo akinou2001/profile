@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.profile-photo {
+    flex: 1;
+    background: url('profile.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.profile-text {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+h1, h2 {
+    color: #2a2a2a;
+}
+
+.subtitle, p {
+    margin: 5px 0;
+}
+
+.info-section, .bio-section {
+    margin-top: 20px;
+}
