@@ -1,46 +1,91 @@
-body, html {
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: #f4f4f9;
+    background-color: #f9fafb;
     color: #333;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    margin-top: 5px;
+    font-size: 1.2rem;
 }
 
 .profile-container {
-    display: flex;
-    width: 90%;
-    max-width: 1200px;
-    height: 80%;
-    margin: auto;
-    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .profile-photo {
-    flex: 1;
-    background: url('profile.jpg') no-repeat center center;
-    background-size: cover;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4caf50;
 }
 
 .profile-text {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: white;
-}
-
-h1, h2 {
-    color: #2a2a2a;
-}
-
-.subtitle, p {
-    margin: 5px 0;
+    margin: 20px;
 }
 
 .info-section, .bio-section {
-    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-section h2, .bio-section h2 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.bio-section a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.bio-section a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
